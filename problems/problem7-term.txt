@@ -1,0 +1,5 @@
+Hexlify "YELLOW SUBMARINE" to get 59454c4c4f57205355424d4152494e45
+
+then:
+
+curl http://cryptopals.com/static/challenge-data/7.txt 2>/dev/null|openssl enc -aes-128-ecb -a -d -K '59454c4c4f57205355424d4152494e45
