@@ -203,6 +203,9 @@ def generate_AES_key():
     #print binascii.hexlify(os.urandom(16))
     return randomword(16)
 
+def generate_AES_key_alt(strlen):
+    return ''.join(map(chr,[random.randint(0, 255) for _ in range(strlen)]))
+
 def encryption_oracle(plaintext, debug=False):
     """ encrypt using CBC or ECB (random choice) """
     key = generate_AES_key()
